@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FogotpassFragment">
+
+    <!-- Horizontal Guide Lines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <!-- Vertical Guide Lines Start -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <!-- Vertical Guide Line End -->
+
+
+    <!-- Top Bar Start -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_2"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_1">
+
+        <ImageView
+            android:id="@+id/fp_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:autoSizeMaxTextSize="100dp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Forgot Password"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Top Bar End -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <!-- Top Bar Guide Line End -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/login_image"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_3"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_7" />
+
+    <!-- ImageView Horizontal Guide Line -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <!-- Text Guide Line -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".43"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Find your account"
+        android:textColor="@color/purple_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_4" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="On the other hand, we denounce with \nrighteous indignation and dislike men."
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/dark_grey"
+        android:layout_marginTop="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <!-- Horizontal Guide Line for EditText and Button -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".6"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Mobile Number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_5" />
+
+    <EditText
+        android:id="@+id/fp_phone_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:autoSizeMaxTextSize="100dp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter 10 digit number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/send_otp_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="22sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/purple_dark"
+        android:fontFamily="@font/montserrat"
+        android:text="Send"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_6"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:shapeAppearance="@style/Rounded" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".9"/>
+
+    <!-- Horizontal Guide Line for EditText and Button End -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
