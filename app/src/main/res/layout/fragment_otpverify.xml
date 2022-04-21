@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.OtpverifyFragment">
+
+    <!-- Horizontal Guide Lines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <!-- Vertical Guide Lines Start -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <!-- Vertical Guide Line End -->
+
+
+    <!-- Top Bar Start -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_2"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_1">
+
+        <ImageView
+            android:id="@+id/otp_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:autoSizeMaxTextSize="100dp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Verification"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Top Bar End -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <!-- Top Bar Guide Line End -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/otp_image"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_3"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_11" />
+
+    <!-- ImageView Horizontal Guide Line -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <!-- Text Guide Line -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".43"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Verify your mobile number"
+        android:textColor="@color/purple_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Enter OTP sent to +91 8866410495"
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_5"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5"/>
+
+    <!-- Horizontal Guide Line for TextView End -->
+
+    <!-- Horizontal Guide Line for OTP EditText -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_7"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_6">
+
+
+        <EditText
+            android:id="@+id/otp_1_et"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/background_box"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/otp_2_et"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/otp_2_et"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/background_box"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/otp_3_et"
+            app:layout_constraintStart_toEndOf="@+id/otp_1_et"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/otp_3_et"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/background_box"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/otp_4_et"
+            app:layout_constraintStart_toEndOf="@+id/otp_2_et"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/otp_4_et"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/background_box"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/otp_5_et"
+            app:layout_constraintStart_toEndOf="@+id/otp_3_et"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/otp_5_et"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/background_box"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/otp_6_et"
+            app:layout_constraintStart_toEndOf="@+id/otp_4_et"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/otp_6_et"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/background_box"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/otp_5_et"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <!-- Horizontal Guide Line for EditText End -->
+
+    <!-- Horizontal Guide Line for Resend Button -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_9"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:text="Not Received OTP ?"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="100dp"
+            android:autoSizeStepGranularity="2sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/resend_otp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Resend OTP"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="100dp"
+            android:autoSizeStepGranularity="2sp"
+            android:gravity="center"
+            android:textColor="@color/purple" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <!-- Horizontal Guide Line For Button End -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
