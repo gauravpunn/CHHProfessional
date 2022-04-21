@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ESASFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                app:cardCornerRadius="90dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo_image"
+                    android:padding="20sp"
+                    android:scaleType="fitCenter"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancer Home Health"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cancerhealth.in"
+                android:gravity="center"
+                android:textColor="@color/dark_grey"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+91 8858585858"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edmonton Symptom Assessment Scale"
+            android:drawableEnd="@drawable/ic_arrow_up"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:paddingStart="15sp"
+            android:paddingEnd="15sp"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pain"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:stepSize="1.0"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1"
+                app:thumbColor="@color/purple_dark"
+                app:trackColor="@color/card_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fatigue"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:stepSize="1.0"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:thumbColor="@color/purple_dark"
+                app:trackColor="@color/card_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nausea"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:stepSize="1.0"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:thumbColor="@color/purple_dark"
+                app:trackColor="@color/card_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Depression"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:stepSize="1.0"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:thumbColor="@color/purple_dark"
+                app:trackColor="@color/card_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anxiety"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:stepSize="1.0"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:thumbColor="@color/purple_dark"
+                app:trackColor="@color/card_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drowsiness"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:stepSize="1.0"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:thumbColor="@color/purple_dark"
+                app:trackColor="@color/card_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breathlessness"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:stepSize="1.0"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                app:thumbColor="@color/purple_dark"
+                app:trackColor="@color/card_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L.O. Appetite"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:stepSize="1.0"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:thumbColor="@color/purple_dark"
+                app:trackColor="@color/card_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":.O. Sleep"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:stepSize="1.0"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                app:thumbColor="@color/purple_dark"
+                app:trackColor="@color/card_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L.O. Wellbeing"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:stepSize="1.0"
+                android:valueFrom="0.0"
+                android:valueTo="10.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                app:thumbColor="@color/purple_dark"
+                app:trackColor="@color/card_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miscellaneous symptom checklist"
+            android:fontFamily="@font/montserrat"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GIT"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Diarrhea"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Hiccoughs"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Dysphagia"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Flatulence"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_2"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Ascites"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oral Cavity"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Pain"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Dryness"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Dysphagia"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_3"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Ulcers"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_4"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Halitosis"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_3"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respiratory"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Cough"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Sputum"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Hemoptysis"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_5"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox11" />
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Halitosis"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_6"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
+
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Wheezing"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_5"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox13" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cognitive"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5" />
+
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Amnesia"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Dysphasia"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Labile mood"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_7"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox16" />
+
+            <CheckBox
+                android:id="@+id/checkBox19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Anxiety"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_8"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox17" />
+
+            <CheckBox
+                android:id="@+id/checkBox20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Depression"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_7"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox18" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skin"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5" />
+
+            <CheckBox
+                android:id="@+id/checkBox21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Pruritus"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Dryness"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Pressusre Sore"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_9"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox21" />
+
+            <CheckBox
+                android:id="@+id/checkBox24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Wound"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_10"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox22" />
+
+            <CheckBox
+                android:id="@+id/checkBox25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Edema"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_9"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox23" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bladder"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5" />
+
+            <CheckBox
+                android:id="@+id/checkBox26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Odor"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_11"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Burning"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_12"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Frequency"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_11"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox26" />
+
+            <CheckBox
+                android:id="@+id/checkBox29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Oliguria"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_12"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox27" />
+
+            <CheckBox
+                android:id="@+id/checkBox30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Incontinence"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_11"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox28" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bladder"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_line_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5" />
+
+            <CheckBox
+                android:id="@+id/checkBox31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Fever"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_13"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Sweats"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_14"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Weight loss"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_13"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox31" />
+
+            <CheckBox
+                android:id="@+id/checkBox34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Fatigue"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_14"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox32" />
+
+            <CheckBox
+                android:id="@+id/checkBox35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/purple"
+                android:fontFamily="@font/montserrat"
+                android:text="Bleeding"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line_13"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox33" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginStart="15sp"
+            android:paddingStart="10dp"
+            android:inputType="textMultiLine"
+            android:gravity="start"
+            android:textSize="14sp"
+            android:padding="18sp"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:fontFamily="@font/montserrat"
+            android:background="@drawable/rounded_edittext" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="15sp">
+
+            <Button
+                android:id="@+id/button2"
+                style="?attr/materialButtonOutlinedStyle"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="99dp"
+                android:fontFamily="@font/montserrat"
+                android:padding="20sp"
+                android:paddingStart="30sp"
+                android:paddingEnd="30sp"
+                android:text="Edit"
+                android:textColor="@color/purple_dark"
+                app:strokeColor="@color/purple_dark"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/Rounded" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_dark"
+                android:fontFamily="@font/montserrat"
+                android:padding="20sp"
+                android:paddingStart="30sp"
+                android:paddingEnd="30sp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/Rounded" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

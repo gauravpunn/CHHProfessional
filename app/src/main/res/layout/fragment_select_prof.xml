@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SelectProfFragment">
+
+
+    <!--             Guide Lines             -->
+    <!-- Horizontal Guide Lines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_2"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_1" />
+
+
+    <!-- Vertical Guide Lines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <!--              Image end                    -->
+
+    <!-- Horizontal Guide Line for TextViews -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Let's Get Started"
+        android:textColor="@color/purple_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_4"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <!-- TextView End -->
+
+    <!-- AutoComplete using as spinner -->
+
+    <!-- Vertical Guide Lines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <!-- Vertical Guide Lines end -->
+
+    <!-- Horizontal Guide Lines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Select User Type"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/select_user_til"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_4"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_3"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_5" />
+
+    <!-- Spinner for select user type -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/select_user_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:boxStrokeColor="@color/purple"
+        app:errorEnabled="true"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_6"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_4"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:shapeAppearance="@style/Rounded">
+
+        <AutoCompleteTextView
+            android:id="@+id/select_user_act"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select User"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+     <!-- Spinner End -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <Button
+        android:id="@+id/select_user_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/purple_dark"
+        android:fontFamily="@font/montserrat"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_8"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_4"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_3"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_7"
+        app:shapeAppearance="@style/Rounded" />
+
+    <!-- Horizontal Guide line -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

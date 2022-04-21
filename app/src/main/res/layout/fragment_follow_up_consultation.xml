@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PatientAssessmentFormFragment">
+
+    <!-- Vertical Guide line Start-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".95" />
+
+    <!-- Vertical Guide line End-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_1"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".08"/>
+
+    <!-- Top Bar Guide Line End -->
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="FOLLOW UP \nCONSULTATION RECORD"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_1" />
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_3"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".22"/>
+
+
+    <TextView
+        android:id="@+id/pbi_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_button_bg"
+        android:drawableEnd="@drawable/ic_add"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/montserrat"
+        android:padding="10sp"
+        android:text="1). Patient Basic Information"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ce_btn"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_3" />
+
+    <TextView
+        android:id="@+id/ce_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_button_bg"
+        android:drawableEnd="@drawable/ic_add"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/montserrat"
+        android:padding="10sp"
+        android:text="2). Clinical Examination"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/esas_btn"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/pbi_btn" />
+
+
+
+    <TextView
+        android:id="@+id/esas_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_button_bg"
+        android:drawableEnd="@drawable/ic_add"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/montserrat"
+        android:padding="10sp"
+        android:text="3). Edmonton Symptom \nAssessment Scale"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rbi_btn"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/ce_btn" />
+
+    <TextView
+        android:id="@+id/rbi_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_button_bg"
+        android:drawableEnd="@drawable/ic_add"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/montserrat"
+        android:padding="10sp"
+        android:text="4). Recent Blood Investigation"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dwpr_btn"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/esas_btn" />
+
+    <TextView
+        android:id="@+id/dwpr_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_button_bg"
+        android:drawableEnd="@drawable/ic_add"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/montserrat"
+        android:padding="10sp"
+        android:text="5). Discussion with patients /or \nrelatives"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nfv_btn"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/rbi_btn" />
+
+    <TextView
+        android:id="@+id/nfv_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_button_bg"
+        android:drawableEnd="@drawable/ic_add"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/montserrat"
+        android:padding="10sp"
+        android:text="6). Next Follow up visit \ndate"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_4"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toBottomOf="@+id/dwpr_btn" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75"/>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_dark"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line_6"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line_2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line_5"
+        app:shapeAppearance="@style/Rounded"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".93"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

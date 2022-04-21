@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "702619333866",
+    "project_id": "chhprofessional-c7771",
+    "storage_bucket": "chhprofessional-c7771.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702619333866:android:9a5b3df928002c6b659393",
+        "android_client_info": {
+          "package_name": "com.cancerhomehealth.chhprofessional"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702619333866-gfh6ljjtnafbfg4k0a053ih4j4fn6tbd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cancerhomehealth.chhprofessional",
+            "certificate_hash": "6a39701564f1e5b113f9b647b75d1b4ba2672b15"
+          }
+        },
+        {
+          "client_id": "702619333866-5sb5jqcc00hq12l1d35jmfmr5jddesso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjSjiCVssROGLX2GdOxEhdgjjKsIeguxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702619333866-5sb5jqcc00hq12l1d35jmfmr5jddesso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
